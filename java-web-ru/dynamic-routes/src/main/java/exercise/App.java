@@ -32,6 +32,8 @@ public final class App {
             if (company == null) {
                 throw new NotFoundResponse("Company not found");
             }
+
+            ctx.json(company);
         });
         // END
 
